@@ -306,6 +306,7 @@ const styles = StyleSheet.create({
     color: '#333',
   },
 });
+```
 
 ### 5. What is Flexbox and how does it work in React Native?
 **Answer:**
