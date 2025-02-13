@@ -369,6 +369,7 @@ const styles = {
     textAlign: 'center',
   },
 };
+```
 
 ## 13. What is the purpose of ScrollView in React Native?
 **Answer:**  
@@ -412,6 +413,7 @@ const MyModal = () => {
     </View>
   );
 };
+```
 
 ## 18. What is the difference between useState and useReducer?
 **Answer:**  
@@ -442,7 +444,7 @@ const styles = {
     alignItems: 'center',
   },
 };
-
+```
 
 
 
