@@ -66,7 +66,7 @@ class EmailService {
 ```
 By splitting responsibilities, you can make sure each class or service does only one thing and is easier to maintain.
 
-### ** 1.2 Open/Closed Principle (OCP)
+### **1.2 Open/Closed Principle (OCP)**
 The Open/Closed Principle states that software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. This encourages building systems that are flexible and can be extended without altering existing code.
 
 Example:
@@ -108,7 +108,7 @@ class DiscountService {
 ```
 Here, DiscountService is open for extension (new types of discounts can be added), but it doesn't require modification of the existing code.
 
-### ** 1.3 Liskov Substitution Principle (LSP)
+### **1.3 Liskov Substitution Principle (LSP)**
 The Liskov Substitution Principle states that objects of a base class should be replaceable with objects of a derived class without affecting the correctness of the program.
 
 Example:
@@ -132,7 +132,7 @@ class Ostrich extends Bird {
 ```
 Here, Ostrich violates LSP because it overrides the fly() method in a way that doesn't follow the base class's behavior. We can fix this by designing a better hierarchy or creating a Flyable interface.
 
-### ** 1.4 Interface Segregation Principle (ISP)
+### **1.4 Interface Segregation Principle (ISP)**
 The Interface Segregation Principle states that clients should not be forced to depend on interfaces they don't use. Instead of one large interface, it is better to split it into smaller, more specific ones.
 
 Example:
@@ -172,7 +172,7 @@ class WorkerImpl implements Workable, Eatable {
 ```
 Now the WorkerImpl class only implements what is needed.
 
-### ** 1.5 Dependency Inversion Principle (DIP)
+### **1.5 Dependency Inversion Principle (DIP)**
 The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. It also states that abstractions should not depend on details. Details should depend on abstractions.
 
 Example:
@@ -227,9 +227,9 @@ class App {
 ```
 Here, App no longer depends on a specific database implementation but on an abstraction (interface), making the code more flexible.
 
-## ** 2. Clean Code Guidelines
+## **2. Clean Code Guidelines**
 
-### ** 2.1 Writing Clean Code
+### **2.1 Writing Clean Code**
 Clean code refers to code that is easy to read, understand, and maintain. It is self-explanatory, well-structured, and consistent.
 
 Key Principles:
@@ -255,16 +255,16 @@ function multiplyByTenIfXIsTen(x: number, y: number): number {
   return y;
 }
 ```
-The second function has a meaningful name and clear intention.
+The second `function` has a meaningful name and clear intention.
 
-### ** 2.2 Naming Conventions
-Proper naming is key to writing clean code. In TypeScript and React Native:
+### **2.2 Naming Conventions**
+Proper naming is key to writing clean code. In `TypeScript` and `React Native`:
 
-Classes/Components: Use PascalCase (e.g., UserProfile).
-Functions/Methods: Use camelCase (e.g., getUserDetails()).
-Constants/Enums: Use UPPER_SNAKE_CASE (e.g., MAX_USERS).
-Types and Interfaces: Use PascalCase with an optional I prefix for interfaces (e.g., IUser).
-### ** ### ** 2.3 Code Structure and Organization
+`Classes/Components`: Use `PascalCase` (e.g., `UserProfile`).
+`Functions/Methods`: Use `camelCase` (e.g., `getUserDetails()`).
+`Constants/Enums`: Use `UPPER_SNAKE_CASE` (e.g., `MAX_USERS`).
+`Types` and `Interfaces`: Use `PascalCase` with an `optional` I prefix for `interfaces` (e.g., `IUser`).
+### **2.3 Code Structure and Organization**
 Keep Components Small and Focused: Each component should represent a single responsibility. Use functional components whenever possible.
 Separate Logic from UI: For example, place business logic in services or hooks, and use components for rendering UI only.
 Group Related Files: Organize components, hooks, services, and styles in well-defined folders.
@@ -282,7 +282,7 @@ Example:
     /useAuth.ts
 ```
 
-### ** 2.4 Avoiding Anti-Patterns
+### **2.4 Avoiding Anti-Patterns**
 Some common anti-patterns in React Native and TypeScript:
 
 Props Drilling: Passing props through multiple layers of components.
@@ -297,7 +297,7 @@ Solution: Always use setState or hooks to update state.
 Not Handling Errors Properly: Ignoring errors or not providing proper error messages.
 
 Solution: Use try/catch blocks and error boundaries to catch and handle errors gracefully.
-### ** 2.5 Refactoring Techniques
+### **2.5 Refactoring Techniques**
 Extract Functions: If a function is too large, break it down into smaller ones.
 Replace Magic Numbers: Replace numbers with named constants to make code more readable.
 Eliminate Dead Code: Remove unused variables, functions, or imports.
