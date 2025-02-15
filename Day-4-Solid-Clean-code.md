@@ -281,7 +281,7 @@ Example:
   /hooks
     /useAuth.ts
 ```
-    
+
 ### ** 2.4 Avoiding Anti-Patterns
 Some common anti-patterns in React Native and TypeScript:
 
@@ -311,4 +311,92 @@ Writing functions that have a clear purpose.
 Keeping components focused on rendering and delegating logic to services or hooks.
 Avoiding direct state mutation and ensuring that the app structure is clean and organized.
 Following these guidelines will not only improve your code quality but also enhance collaboration, testing, and debugging in team environments.
+
+# Interview Questions on SOLID Principles & Clean Code for TypeScript & React Native
+
+## 1. What is the Single Responsibility Principle (SRP)?
+
+**Answer:**
+The **Single Responsibility Principle (SRP)** states that a class or function should have only one responsibility or reason to change. This principle helps in keeping the code clean, understandable, and easy to maintain by ensuring that each class or function has a focused task.
+
+---
+
+## 2. What is the Open/Closed Principle (OCP)?
+
+**Answer:**
+The **Open/Closed Principle (OCP)** states that a software entity (like a class or function) should be open for extension but closed for modification. This means you can add new functionality to the system without changing existing code, thus maintaining backward compatibility.
+
+---
+
+## 3. Can you explain the Liskov Substitution Principle (LSP)?
+
+**Answer:**
+The **Liskov Substitution Principle (LSP)** suggests that objects of a superclass should be replaceable with objects of its subclass without affecting the correctness of the program. In simpler terms, subclasses should be able to perform the same tasks as the superclass without introducing errors.
+
+---
+
+## 4. What is the Interface Segregation Principle (ISP)?
+
+**Answer:**
+The **Interface Segregation Principle (ISP)** states that clients should not be forced to implement interfaces they do not use. It encourages breaking large interfaces into smaller, more specific ones that only contain methods relevant to the implementing class.
+
+---
+
+## 5. What is the Dependency Inversion Principle (DIP)?
+
+**Answer:**
+The **Dependency Inversion Principle (DIP)** states that high-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces). This principle promotes flexibility by allowing you to change implementations without affecting the overall system.
+
+---
+
+## 6. What is clean code, and why is it important in software development?
+
+**Answer:**
+**Clean code** refers to code that is easy to read, understand, and maintain. It follows best practices like meaningful naming, proper structure, and minimal duplication. In software development, clean code helps reduce bugs, improve collaboration, and ensure the system can be extended without difficulty.
+
+---
+
+## 7. How do you write clean and maintainable code in React Native?
+
+**Answer:**
+To write clean and maintainable code in React Native:
+- Use **functional components** instead of class components.
+- Keep functions **small and focused** on one task.
+- Follow consistent **naming conventions**.
+- Organize your code into smaller, reusable **components**.
+- Use TypeScript to enforce type safety and avoid errors.
+
+---
+
+## 8. Why is proper naming important in clean code?
+
+**Answer:**
+Proper naming is crucial in clean code because it makes the code **self-explanatory**. Meaningful names for variables, functions, and classes help developers understand the purpose of the code at a glance, reducing the need for excessive comments and enhancing readability.
+
+---
+
+## 9. What are common anti-patterns in React Native development, and how do you avoid them?
+
+**Answer:**
+Common **anti-patterns** in React Native include:
+1. **Props drilling**: Passing data through many components. Use **Context API** or **Redux** to avoid this.
+2. **Large components**: Split them into smaller, focused components to improve maintainability.
+3. **Directly mutating state**: Always use state management functions like `setState` or `useState` hooks.
+4. **Not handling errors properly**: Implement proper error handling with `try/catch` and use error boundaries in React.
+
+---
+
+## 10. How do you refactor code to follow SOLID principles in a React Native app?
+
+**Answer:**
+To refactor code to follow SOLID principles:
+- **SRP**: Break classes and functions into smaller, more focused pieces.
+- **OCP**: Extend functionalities without changing existing code by using inheritance or composition.
+- **LSP**: Ensure subclasses do not break expected behavior of the parent class.
+- **ISP**: Split large interfaces into smaller, specific ones.
+- **DIP**: Use dependency injection to decouple modules and rely on abstractions (interfaces).
+
+---
+
+
 
